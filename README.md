@@ -3,7 +3,7 @@
 
 This is a packaged version of Frank Denis's Rust based [`doh-proxy`](https://github.com/jedisct1/rust-doh) project. It's configurable with environment variables:
 
-* `LISTEN`: IP + port to listen for requests, defaults to `0.0.0.0:8080
+* `LISTEN`: IP + port to listen for requests, defaults to `0.0.0.0:8080`
 * `RESOLVER`: IP + port of upstream DNS resolver, defaults to `9.9.9.9:53`
 
 
