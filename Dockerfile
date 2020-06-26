@@ -4,7 +4,7 @@
 
 FROM rust:latest as cargo-build
 
-ARG VERSION=0.1.19
+ARG VERSION=0.3.3
 
 RUN apt-get update
 
@@ -18,7 +18,7 @@ RUN RUSTFLAGS=-Clinker=musl-gcc cargo install doh-proxy --version $VERSION --roo
 # Final Stage
 # ------------------------------------------------------------------------------
 
-FROM alpine:3.10
+FROM alpine:3.12
 
 RUN apk add --no-cache libgcc runit shadow curl
 
